@@ -95,7 +95,7 @@ You can also embed plots, for example:
 ## Warning in as.POSIXlt.POSIXct(x, tz): unknown timezone '%Y-%m-%d'
 ```
 
-![plot of chunk pressure](figure/pressure-1.png)
+![plot of chunk pressure](instructions_fig/unnamed-chunk-0-1.png)
 
 ```
 ## [1] 9354.23
@@ -116,7 +116,7 @@ names(average_daily_activity) <- c("interval", "mean")
 plot(average_daily_activity$interval, average_daily_activity$mean, type = "l", col="darkblue", lwd = 2, xlab="Interval", ylab="Average number of steps", main="Average number of steps per intervals")
 ```
 
-![plot of chunk unnamed-chunk-5](figure/unnamed-chunk-5-1.png)
+![plot of chunk unnamed-chunk-5](instructions_fig/unnamed-chunk-1-1.png)
 
 ```r
 average_daily_activity[which.max(average_daily_activity$mean), ]$interval
@@ -153,7 +153,7 @@ names(total_steps_imputed) <- c("date", "daily_steps")
 hist(total_steps_imputed$daily_steps, col = "darkblue", xlab = "Total steps per day", ylim = c(0,30), main = "Total number of steps taken each day", breaks = seq(0,25000,by=2500))
 ```
 
-![plot of chunk unnamed-chunk-6](figure/unnamed-chunk-6-1.png)
+![plot of chunk unnamed-chunk-6](instructions_fig/unnamed-chunk-2-1.png)
 
 ```r
 mean(total_steps_imputed$daily_steps)
@@ -198,5 +198,5 @@ plot<- ggplot(activity_by_date, aes(x = interval , y = steps, color = datetype))
 print(plot)
 ```
 
-![plot of chunk unnamed-chunk-7](figure/unnamed-chunk-7-1.png)
+![plot of chunk unnamed-chunk-7](instructions_fig/unnamed-chunk-3-1.png)
 
